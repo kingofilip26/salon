@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nehty Nový Jičín | Art Ego Salon krásy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vlasy.css">
+    <link rel="stylesheet" href="nanotape.css">
+
+    <!-- Barevná paleta Salonu Krásy - Teplé nude, blush, růžové zlato (zcela bez modré) -->
+    <style>
+        #nanotape {
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .section-block {
+            padding: 65px 20px;
+            width: 100%;
+        }
+
+        /* 1. ÚVODNÍ TEXTY - Jemná pudrová (Blush / Nude) */
+        .bg-intro {
+            background-color: #faf4f0;
+            text-align: center;
+        }
+
+        .bg-intro .nadpis-h2 {
+            color: #3d2e28;
+        }
+
+        .vlasy-intro-box {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .vlasy-intro-main {
+            font-size: 1.25rem;
+            line-height: 1.85;
+            color: #3a2d27;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .vlasy-intro-sub {
+            font-size: 1.1rem;
+            line-height: 1.75;
+            color: #6b5850;
+        }
+
+        /* 2. BANNER / CAROUSEL - Čistě krémově bílá */
+        .bg-banner {
+            background-color: #211a18;
+            padding: 40px 0;
+            border-top: 1px solid #ebdcd3;
+            border-bottom: 1px solid #ebdcd3;
+        }
+
+        /* 3. KARTY SLUŽEB - Teplý pískový/nude podklad (Bez modré!) */
+        .bg-services {
+            background-color: #f4efe9;
+        }
+
+        .vlasy-services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .vlasy-service-card {
+            padding: 45px 35px;
+            border-radius: 18px;
+            text-align: left;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        /* Lichá karta - Čistá bílá s teplým růžovozlatým okrajem */
+        .vlasy-service-card:nth-child(odd) {
+            background: #ffffff;
+            border: 1px solid #e2cfc4;
+            box-shadow: 0 10px 30px rgba(181, 140, 116, 0.08);
+        }
+
+        .vlasy-service-card:nth-child(odd) h3 {
+            color: #3a2e2b;
+        }
+
+        .vlasy-service-card:nth-child(odd) p {
+            color: #63544e;
+        }
+
+        /* Sudá karta - Tmavé hřejivé espresso / kávový tón */
+        .vlasy-service-card:nth-child(even) {
+            background: #2b221e;
+            border: 1px solid #c8a288;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .vlasy-service-card:nth-child(even) h3 {
+            color: #e2beaa;
+        }
+
+        .vlasy-service-card:nth-child(even) p {
+            color: #f3e9e3;
+        }
+
+        .vlasy-service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #d4a373 0%, #e2beaa 100%);
+            opacity: 0.9;
+            transition: height 0.3s ease;
+        }
+
+        .vlasy-service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 38px rgba(181, 140, 116, 0.25);
+        }
+
+        .vlasy-service-card:hover::before {
+            height: 6px;
+        }
+
+        .vlasy-service-card h3 {
+            font-size: 1.45rem;
+            margin-bottom: 16px;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: -0.3px;
+            line-height: 1.3;
+        }
+
+        .vlasy-service-card p {
+            font-size: 1.02rem;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* 4. GALERIE - Jemná smetanová */
+        .bg-gallery {
+            background-color: #fdfbf7;
+            color: #2c221e;
+        }
+
+        .bg-gallery .nadpis-vlasy {
+            color: #2c221e;
+        }
+
+        /* 5. BANNER PROFESSIONAL PÉČE - Luxusní tmavé hnědo-zlaté pozadí */
+        .bg-loreal {
+            background-color: #211a18;
+            padding: 80px 20px;
+        }
+
+        .vlasy-loreal-banner {
+            background: linear-gradient(135deg, #342a26 0%, #211a18 100%);
+            color: #ffffff;
+            padding: 60px 40px;
+            border-radius: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid rgba(212, 163, 115, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .vlasy-loreal-banner h3 {
+            color: #e2beaa;
+            font-size: 1.9rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .vlasy-loreal-banner p {
+            font-size: 1.1rem;
+            line-height: 1.85;
+            color: #f0e6e0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* 6. REZERVAČNÍ CTA - Růžovo-zlatý champagne tón */
+        .bg-cta {
+            background-color: #f5ebe3;
+            padding: 80px 20px;
+        }
+
+        .vlasy-cta-box {
+            text-align: center;
+            margin: 0 auto;
+            padding: 50px 30px;
+            background: #ffffff;
+            border-radius: 20px;
+            max-width: 900px;
+            border: 1px solid #ebdcd0;
+            box-shadow: 0 12px 30px rgba(181, 140, 116, 0.12);
+        }
+
+        .vlasy-cta-box h3 {
+            font-size: 1.8rem;
+            color: #382c26;
+            margin-bottom: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        .vlasy-cta-box p {
+            margin-bottom: 30px;
+            color: #63544e;
+            font-size: 1.1rem;
+        }
+
+        .vlasy-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #c8a288 0%, #b3896f 100%);
+            color: #ffffff !important;
+            padding: 16px 42px;
+            text-decoration: none;
+            border-radius: 35px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            box-shadow: 0 8px 20px rgba(200, 162, 136, 0.35);
+            transition: all 0.3s ease;
+        }
+
+        .vlasy-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 28px rgba(200, 162, 136, 0.5);
+            background: linear-gradient(135deg, #b3896f 0%, #9e755c 100%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hamburger-menu">
+        <input class="zruseni" type="button" value="x">
+        <a href="index.html" class="hamburger-link o">Domů</a>
+        <a href="tym.html" class="hamburger-link o">Náš Tým</a>
+        <a href="#sluzby" class="hamburger-link o">Služby<span class="sipka">▾</span></a>
+        <a href="vlasy.html" class="hamburger-link link-mensi">Péče o vlasy a vlasovou pokožku</a>
+        <a href="nanotape.html" class="hamburger-link link-mensi">Prodlužování vlasů NANOTAPE</a>
+        <a href="rasy.html" class="hamburger-link link-mensi">Prodlužování řas a úprava obočí</a>
+        <a href="kosmetika.html" class="hamburger-link link-mensi">Kosmetika & Vizážistka</a>
+        <a href="nehty.html" class="hamburger-link link-mensi">Nehtová modeláž a manikúra</a>
+        <a href="#galerie" class="hamburger-link o">Galerie<span class="sipka">▾</span></a>
+        <a href="galerie-prace.html" class="hamburger-link link-mensi">Ukázky Práce</a>
+        <a href="fotogalerie.html" class="hamburger-link link-mensi">Fotky Interiéru</a>
+        <a href="#nehtik" class="hamburger-link o">Ceník</a>
+        <a href="kontakty.html" class="hamburger-link o">Kontakty</a>
+    </div>
+
+    <a class="nahoru" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    
+    <div class="topbar">
+        <div class="nav-kontakty">
+            <div class="telefon">
+                <div class="address">
+                    <a class="lincik" target="_blank" href="tel:+420556731788"><i class="fa-solid fa-location-dot"></i></a>
+                    <address class="telefon-span">K Nemocnici 3, 741 01 Nový Jičín</address>
+                </div>
+                <div class="separator"></div>
+                <div class="oteviracka">
+                    <i class="fa-solid fa-clock"></i>
+                    <span class="telefon-span">PO - NE I dle objednávek </span>
+                </div>
+            </div>
+            <div class="socials">
+                <a target="_blank" href="https://www.instagram.com/salon_art_ego/"><i class="fa-brands fa-instagram lincik klik"></i></a>
+                <a target="_blank" href="https://www.facebook.com/p/Kade%C5%99nick%C3%BD-kosmetick%C3%BD-salon-art-ego-100063534042336/?locale=cs_CZ"><i class="fa-brands fa-facebook lincik klik"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header id="header">
+        <nav>
+            <input type="button" class="hamburgerInput" value="≡">
+            <figure class="osobni-logo-figure">
+                <img src="logo3-removebg-preview2.webp" alt="" class="osobni-logo-image">
+            </figure>
+            <ul class="link-list">
+                <li class="link-list-li">
+                    <a href="index.html" class="nav-link klik">Domů</a>
+                </li>
+                <li class="link-list-li">
+                    <a href="tym.html" class="nav-link klik">Náš Tým</a>
+                </li>
+                <li class="link-list-li dropdown">
+                    <a href="#" class="nav-link klik">Služby▾</a>
+                    <ul class="sluzby-podsekce">
+                        <div class="podsekce-div">
+                            <li class="podsekce-li">
+                                <a class="podsekce-link" href="vlasy.html">Péče o vlasy a vlasovou pokožku</a>
+                            </li>
+                            <li class="podsekce-li">
+                                <a class="podsekce-link" href="nanotape.html">Prodlužování vlasů NANOTAPE</a>
+                            </li>
+                            <li class="podsekce-li">
+                                <a class="podsekce-link" href="rasy.html">Prodlužování řas a úprava obočí</a>
+                            </li>
+                            <li class="podsekce-li">
+                                <a class="podsekce-link" href="kosmetika.html">Kosmetika & Vizážistka</a>
+                            </li>
+                            <li class="podsekce-li">
+                                <a class="podsekce-link" href="nehty.html">Nehtová modeláž a manikúra</a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="link-list-li dropdown">
+                    <a href="#galerie" class="nav-link klik">Galerie▾</a>
+                    <ul class="sluzby-podsekce podsekce2">
+                        <div class="podsekce-div">
+                            <li class="podsekce-li">
+                                <a class="podsekce-link" href="galerie-prace.html">ukázky práce</a>
+                            </li>
+                            <li class="podsekce-li">
+                                <a class="podsekce-link" href="fotogalerie.html">fotky interiéru</a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="link-list-li"><a href="#nehtik" class="nav-link klik">Ceník</a></li>
+                <li class="link-list-li">
+                    <a href="kontakty.html" class="nav-link klik">Kontakty</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="nanotape">
+            
+            <!-- 1. BLOK: Nadpis a úvodní texty (Jemná pudrová) -->
+            <div class="section-block bg-intro">
+                <h2 class="nadpis-h2">Nehty</h2>
+                <div class="cara"></div>
+            </div>
+            
+            <!-- 2. BLOK: Banner / Carousel obrázků (Čistá bílá) -->
+            <div class="section-block bg-banner sekce" id="banner">
+                <div class="banner-container">
+                    <img src="nehty.webp" alt="">
+                    <img src="nehty2.webp" alt="">
+                    <img src="nehty3.webp" alt="">
+                    <img src="nehty4.webp" alt="">
+                    <img src="nehty5.webp" alt="">
+                    <img src="nehty6.webp" alt="">
+                    <img src="nehty7.webp" alt="">
+                    <img src="nehty8.webp" alt="">
+                    <img src="nehty.webp" alt="">
+                    <img src="nehty2.webp" alt="">
+
+                    <img src="nehty.webp" alt="">
+                    <img src="nehty2.webp" alt="">
+                    <img src="nehty3.webp" alt="">
+                    <img src="nehty4.webp" alt="">
+                    <img src="nehty5.webp" alt="">
+                    <img src="nehty6.webp" alt="">
+                    <img src="nehty7.webp" alt="">
+                    <img src="nehty8.webp" alt="">
+                    <img src="nehty.webp" alt="">
+                    <img src="nehty2.webp" alt="">
+                </div>
+            </div>
+    
+            <!-- 3. BLOK: Karty služeb (Nude pískové pozadí) -->
+            <div class="section-block bg-services sekce">
+                <div class="vlasy-services-grid">
+                    <div class="vlasy-service-card">
+                        <h3>Nehtová gelová modeláž</h3>
+                        <p>Prodloužení přírodních nehtů pomocí gelového materiálu na požadovanou délku a tvar. Součástí je manikúra, aplikace gelu a zdobení dle Vašeho přání.</p>
+                    </div>
+                    <div class="vlasy-service-card">
+                        <h3>Doplnění nehtové modeláže</h3>
+                        <p>Úprava odrostlé modeláže – odstranění části starého materiálu, úprava délky a tvaru, manikúra, doplnění gelu a nový design podle Vašeho přání.</p>
+                    </div>
+                    <div class="vlasy-service-card">
+                        <h3>Přístrojová manikúra pro ženy i muže</h3>
+                        <p>Úprava přírodních nehtů, nehtového valu a okolní kůžičky pomocí profesionálních přístrojů pro upravený a čistý vzhled rukou.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- 4. BLOK: Ukázky práce / Galerie (Smetanová bílá) -->
+            <div class="section-block bg-gallery">
+                <div class="nanotape-container">
+                    <h3 class="nadpis-vlasy">Ukázky práce</h3>
+                    <div class="cara"></div>
+                    
+                    <div class="full-img" id="fullImgBox">
+                        <img src="" alt="" id="fullImg">
+                        <span onclick="closeFullImg()">X</span>
+                    </div>
+                    
+                    <div class="kontejner-vlasy">
+                        <figure class="fotky-figure sekce">
+                            <img src="nehty.webp" alt="Ukázka nehtové modeláže" class="fotky-image" onclick="openFullImg(this.src)">
+                        </figure>
+                        <figure class="fotky-figure sekce">
+                            <img src="nehty2.webp" alt="Ukázka nehtové modeláže" class="fotky-image" onclick="openFullImg(this.src)">
+                        </figure>
+                        <figure class="fotky-figure sekce">
+                            <img src="nehty3.webp" alt="Ukázka nehtové modeláže" class="fotky-image" onclick="openFullImg(this.src)">
+                        </figure>
+                        <figure class="fotky-figure sekce">
+                            <img src="nehty4.webp" alt="Ukázka nehtové modeláže" class="fotky-image" onclick="openFullImg(this.src)">
+                        </figure>
+                        <figure class="fotky-figure sekce">
+                            <img src="nehty5.webp" alt="Ukázka nehtové modeláže" class="fotky-image" onclick="openFullImg(this.src)">
+                        </figure>
+                        <figure class="fotky-figure sekce">
+                            <img src="nehty6.webp" alt="Ukázka nehtové modeláže" class="fotky-image" onclick="openFullImg(this.src)">
+                        </figure>
+                        <figure class="fotky-figure sekce">
+                            <img src="nehty7.webp" alt="Ukázka nehtové modeláže" class="fotky-image" onclick="openFullImg(this.src)">
+                        </figure>
+                        <figure class="fotky-figure sekce">
+                            <img src="nehty8.webp" alt="Ukázka nehtové modeláže" class="fotky-image" onclick="openFullImg(this.src)">
+                        </figure>
+                        <figure class="fotky-figure sekce">
+                            <img src="nehty.webp" alt="Ukázka nehtové modeláže" class="fotky-image" onclick="openFullImg(this.src)">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- 5. BLOK: Profesionální péče banner (Hnědo-espresso tón) -->
+            <div class="section-block bg-loreal sekce">
+                <div class="vlasy-loreal-banner">
+                    <h3>Profesionální péče & Hypoalergenní materiály</h3>
+                    <p>
+                        Klademe maximální důraz na **hygienu, bezpečnost a kvalitu** používaných produktů. Pracujeme výhradně s certifikovanými materiály, které jsou šetrné k přírodním nehtům i citlivé pokožce rukou. Zaručujeme dlouhou trvanlivost bez štěpení a praskání.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- 6. BLOK: Rezervační výzva CTA (Champagne) -->
+            <div class="section-block bg-cta sekce">
+                <div class="vlasy-cta-box">
+                    <h3>Chcete mít krásné a pěstěné nehty?</h3>
+                    <p>Objednejte se na manikúru nebo nehtovou modeláž a dopřejte svým rukám profesionální péči.</p>
+                    <a href="kontakty.html" class="vlasy-btn">Objednat se</a>
+                </div>
+            </div>
+            
+        </section>
+
+        <div class="cenik-container sekce" id="nehtik">
+             <!-- 5. NEHTOVÁ MODELÁŽ & MANIKÚRA -->
+             <div class="cenik-karta">
+                <h3 class="cenik-nadpis"><i class="fa-solid fa-hand"></i> Nehtová modeláž & Manikúra</h3>
+                <div class="cenik-podsekce-titul">Doplnění nehtové modeláže</div>
+                <ul class="cenik-seznam">
+                    <li><span>S (do 13mm)</span> <strong>620 Kč</strong></li>
+                    <li><span>M (14–17mm)</span> <strong>670 Kč</strong></li>
+                    <li><span>L (18–20mm)</span> <strong>690 Kč</strong></li>
+                    <li><span>XL (21–24mm)</span> <strong>760 Kč</strong></li>
+                    <li><span>XXL (25–30mm)</span> <strong>870 Kč</strong></li>
+                </ul>
+
+                <div class="cenik-podsekce-titul">Nová nehtová modeláž</div>
+                <ul class="cenik-seznam">
+                    <li><span>S (do 13mm)</span> <strong>720 Kč</strong></li>
+                    <li><span>M (14–17mm)</span> <strong>770 Kč</strong></li>
+                    <li><span>L (18–20mm)</span> <strong>790 Kč</strong></li>
+                    <li><span>XL (21–24mm)</span> <strong>860 Kč</strong></li>
+                    <li><span>XXL (25–30mm)</span> <strong>970 Kč</strong></li>
+                </ul>
+
+                <div class="cenik-podsekce-titul">Další služby</div>
+                <ul class="cenik-seznam">
+                    <li><span>Gel lak</span> <strong>610 Kč</strong></li>
+                    <li><span>Dámská / pánská manikúra</span> <strong>300 Kč</strong></li>
+                    <li><span>Složité kreslení</span> <strong>až 70 Kč / nehet</strong></li>
+                    <li><span>3D dekorace</span> <strong>až 50 Kč / kus</strong></li>
+                    <li><span>Sundání umělých nehtů</span> <strong>400 Kč</strong></li>
+                    <li><span>Stavěné designy (z důvodu časové náročnosti nutno dohodnout předem)</span> <strong>od 1 000 Kč / dle složitosti</strong></li>
+                </ul>
+                <p class="cenik-nota">* Storno poplatek ve výši 300 Kč v případě, že na termín nedorazíte nebo jej zrušíte méně než 24 hodin předem.</p>
+            </div>
+
+        </div>
+       </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-blok blocekJedna sekce">
+                <div class="footer-text">
+                    <figure class="footer-figure">
+                        <img src="logo3-removebg-preview2.webp" alt="" class="footer-image">
+                    </figure>
+                    <p class="footer-para">Dopřejte svým vlasům profesionální péči a nechte se hýčkat v prostředí, kde s láskou pečujeme o váš celkový půvab. V našem salonu propojujeme špičkové služby s dokonalým relaxem, abyste odcházela sebevědomá, odpočinutá a zářící.</p>
+                    
+                </div>
+            </div>
+
+            <div class="footer-links sekce">
+                <h3 class="footer-h3">Rychlé odkazy</h3>
+                <a class="footer-link linkos" href="index.html">Domů</a>
+                <a class="footer-link linkos" href="#onas">O nás</a>
+                <a class="footer-link linkos" href="#sluzby">Služby</a>
+                <a class="footer-link linkos" href="#galerie">Galerie</a>
+                <a class="footer-link linkos" href="#nehtik">Ceník</a>
+                <a class="footer-link linkos" href="#kontakty">Kontakty</a>
+            </div>
+
+            <div class="footer-links sekce">
+                <h3 class="footer-h3">Naše služby</h3>
+                <a class="footer-link linkos2" href="vlasy.html">Péče o vlasy a vlasovou pokožku</a>
+                <a class="footer-link linkos2" href="vlasy.html">Barvení vlasů</a>
+                <a class="footer-link linkos2" href="nanotape.html">Prodlužování vlasů</a>
+                <a class="footer-link linkos2" href="rasy.html">Řasy</a>
+                <a class="footer-link linkos2" href="nehty.html">Nehty</a>
+                <a class="footer-link linkos2" href="kosmetika.html">Kosmetika</a>
+            </div>
+
+            <div class="footer-blok sekce">
+                <h3 class="footer-h3">Kontaktuj nás</h3>
+                <div class="footer-radek">
+                    <i class="fa-solid fa-location-dot i a"></i>
+                    <span class="footer-span">K Nemocnici 3, 741 01 Nový Jičín</span>
+                </div>
+                <div class="site">
+                    <a target="_blank" href="https://www.instagram.com/salon_art_ego/"><i class="fa-brands fa-instagram i a"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/p/Kade%C5%99nick%C3%BD-kosmetick%C3%BD-salon-art-ego-100063534042336/?locale=cs_CZ"><i class="fa-brands fa-facebook i a"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="caraDva sekce"></div>
+        <p class="footer-last">Web vytvořil Filip Jiřík</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

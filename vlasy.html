@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Péče o vlasy a vlasovou pokožku Nový Jičín | Art Ego Salon krásy</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="vlasy.css">
+
+    <link rel="stylesheet" href="nanotape.css">
+
+    <style>
+
+        #nanotape {
+    
+            padding: 0;
+    
+            font-family: 'Inter', sans-serif;
+    
+        }
+    
+    
+    
+        .section-block {
+    
+            padding: 65px 20px;
+    
+            width: 100%;
+    
+        }
+    
+    
+    
+        /* 1. ÚVODNÍ TEXTY - Jemná pudrová (Blush / Nude) */
+    
+        .bg-intro {
+    
+            background-color: #faf4f0;
+    
+            text-align: center;
+    
+        }
+    
+    
+    
+        .bg-intro .nadpis-h2 {
+    
+            color: #3d2e28;
+    
+            font-family: 'Montserrat', sans-serif;
+    
+            font-size: 2.2rem;
+    
+            margin-bottom: 10px;
+    
+        }
+    
+    
+    
+        .vlasy-intro-box {
+    
+            max-width: 900px;
+    
+            margin: 0 auto;
+    
+        }
+    
+    
+    
+        .vlasy-intro-main {
+    
+            font-size: 1.25rem;
+    
+            line-height: 1.85;
+    
+            color: #3a2d27;
+    
+            margin-bottom: 20px;
+    
+            font-weight: 400;
+    
+        }
+    
+    
+    
+        .vlasy-intro-sub {
+    
+            font-size: 1.1rem;
+    
+            line-height: 1.75;
+    
+            color: #6b5850;
+    
+        }
+    
+    
+    
+        /* 2. BANNER / CAROUSEL - Čistě krémově bílá */
+    
+        .bg-banner {
+    
+            background-color: #211a18;
+    
+            padding: 40px 0;
+    
+            border-top: 1px solid #ebdcd3;
+    
+            border-bottom: 1px solid #ebdcd3;
+    
+        }
+    
+    
+    
+        /* 3. KARTY SLUŽEB - Teplý pískový/nude podklad */
+    
+        .bg-services {
+    
+            background-color: #f4efe9;
+    
+        }
+    
+    
+    
+        .vlasy-services-grid {
+    
+            display: grid;
+    
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    
+            gap: 30px;
+    
+            max-width: 1400px;
+    
+            margin: 0 auto;
+    
+        }
+    
+    
+    
+        .vlasy-service-card {
+    
+            padding: 45px 35px;
+    
+            border-radius: 18px;
+    
+            text-align: left;
+    
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+            position: relative;
+    
+            overflow: hidden;
+    
+            display: flex;
+    
+            flex-direction: column;
+    
+            justify-content: flex-start;
+    
+        }
+    
+    
+    
+        /* Lichá karta - Čistá bílá s teplým růžovozlatým okrajem */
+    
+        .vlasy-service-card:nth-child(odd) {
+    
+            background: #ffffff;
+    
+            border: 1px solid #e2cfc4;
+    
+            box-shadow: 0 10px 30px rgba(181, 140, 116, 0.08);
+    
+        }
+    
+    
+    
+        .vlasy-service-card:nth-child(odd) h3 {
+    
+            color: #3a2e2b;
+    
+        }
+    
+    
+    
+        .vlasy-service-card:nth-child(odd) p,
+    
+        .vlasy-service-card:nth-child(odd) li {
+    
+            color: #63544e;
+    
+        }
+    
+    
+    
+        /* Sudá karta - Tmavé hřejivé espresso / kávový tón */
+    
+        .vlasy-service-card:nth-child(even) {
+    
+            background: #2b221e;
+    
+            border: 1px solid #c8a288;
+    
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    
+        }
+    
+    
+    
+        .vlasy-service-card:nth-child(even) h3 {
+    
+            color: #e2beaa;
+    
+        }
+    
+    
+    
+        .vlasy-service-card:nth-child(even) p,
+    
+        .vlasy-service-card:nth-child(even) li {
+    
+            color: #f3e9e3;
+    
+        }
+    
+    
+    
+        .vlasy-service-card::before {
+    
+            content: '';
+    
+            position: absolute;
+    
+            top: 0;
+    
+            left: 0;
+    
+            width: 100%;
+    
+            height: 4px;
+    
+            background: linear-gradient(90deg, #d4a373 0%, #e2beaa 100%);
+    
+            opacity: 0.9;
+    
+            transition: height 0.3s ease;
+    
+        }
+    
+    
+    
+        .vlasy-service-card:hover {
+    
+            transform: translateY(-8px);
+    
+            box-shadow: 0 18px 38px rgba(181, 140, 116, 0.25);
+    
+        }
+    
+    
+    
+        .vlasy-service-card:hover::before {
+    
+            height: 6px;
+    
+        }
+    
+    
+    
+        .vlasy-service-card h3 {
+    
+            font-size: 1.45rem;
+    
+            margin-bottom: 16px;
+    
+            font-weight: 700;
+    
+            font-family: 'Montserrat', sans-serif;
+    
+            letter-spacing: -0.3px;
+    
+            line-height: 1.3;
+    
+        }
+    
+    
+    
+        .vlasy-service-card p {
+    
+            font-size: 1.02rem;
+    
+            line-height: 1.7;
+    
+            margin: 0 0 15px 0;
+    
+        }
+    
+    
+    
+        /* STYLY PRO DETAILNÍ SEKCÍ A TABULKU */
+    
+        .section-title-wrapper {
+    
+            text-align: center;
+    
+            max-width: 900px;
+    
+            margin: 0 auto 40px auto;
+    
+        }
+    
+    
+    
+        .section-title-wrapper h2 {
+    
+            font-family: 'Montserrat', sans-serif;
+    
+            font-size: 2rem;
+    
+            color: #3d2e28;
+    
+            margin-bottom: 10px;
+    
+        }
+    
+    
+    
+        .section-title-wrapper p {
+    
+            color: #6b5850;
+    
+            font-size: 1.1rem;
+    
+        }
+    
+    
+    
+        .vlasy-list {
+    
+            list-style: none;
+    
+            padding: 0;
+    
+            margin: 15px 0;
+    
+        }
+    
+    
+    
+        .vlasy-list li {
+    
+            position: relative;
+    
+            padding-left: 25px;
+    
+            margin-bottom: 10px;
+    
+            font-size: 0.98rem;
+    
+            line-height: 1.6;
+    
+        }
+    
+    
+    
+        .vlasy-list li::before {
+    
+            content: '✓';
+    
+            position: absolute;
+    
+            left: 0;
+    
+            top: 0;
+    
+            color: #c8a288;
+    
+            font-weight: bold;
+    
+        }
+    
+    
+    
+        .badge-tag {
+    
+            display: inline-block;
+    
+            background: rgba(200, 162, 136, 0.15);
+    
+            color: #9e755c;
+    
+            padding: 4px 12px;
+    
+            border-radius: 20px;
+    
+            font-size: 0.85rem;
+    
+            font-weight: 600;
+    
+            margin-bottom: 15px;
+    
+            text-transform: uppercase;
+    
+            letter-spacing: 0.5px;
+    
+        }
+    
+    
+    
+        .vlasy-service-card:nth-child(even) .badge-tag {
+    
+            background: rgba(226, 190, 170, 0.15);
+    
+            color: #e2beaa;
+    
+        }
+    
+    
+    
+        /* Srovnávací tabulka */
+    
+        .comparison-wrapper {
+    
+            max-width: 1100px;
+    
+            margin: 50px auto 0 auto;
+    
+            background: #ffffff;
+    
+            border-radius: 20px;
+    
+            padding: 40px;
+    
+            box-shadow: 0 10px 30px rgba(181, 140, 116, 0.12);
+    
+            border: 1px solid #ebdcd0;
+    
+        }
+    
+    
+    
+        .comparison-wrapper h3 {
+    
+            font-family: 'Montserrat', sans-serif;
+    
+            text-align: center;
+    
+            font-size: 1.6rem;
+    
+            color: #382c26;
+    
+            margin-bottom: 25px;
+    
+        }
+    
+    
+    
+        .responsive-table {
+    
+            overflow-x: auto;
+    
+        }
+    
+    
+    
+        .custom-table {
+    
+            width: 100%;
+    
+            border-collapse: collapse;
+    
+            text-align: left;
+    
+        }
+    
+    
+    
+        .custom-table th {
+    
+            background-color: #2b221e;
+    
+            color: #e2beaa;
+    
+            padding: 16px 20px;
+    
+            font-family: 'Montserrat', sans-serif;
+    
+            font-size: 1rem;
+    
+            font-weight: 700;
+    
+        }
+    
+    
+    
+        .custom-table th:first-child {
+    
+            border-top-left-radius: 12px;
+    
+        }
+    
+    
+    
+        .custom-table th:last-child {
+    
+            border-top-right-radius: 12px;
+    
+        }
+    
+    
+    
+        .custom-table td {
+    
+            padding: 16px 20px;
+    
+            border-bottom: 1px solid #ebdcd0;
+    
+            color: #52433d;
+    
+            font-size: 0.98rem;
+    
+            line-height: 1.6;
+    
+        }
+    
+    
+    
+        .custom-table tr:hover td {
+    
+            background-color: #faf4f0;
+    
+        }
+    
+    
+    
+        /* 4. GALERIE - Jemná smetanová */
+    
+        .bg-gallery {
+    
+            background-color: #fdfbf7;
+    
+            color: #2c221e;
+    
+        }
+    
+    
+    
+        .bg-gallery .nadpis-vlasy {
+    
+            color: #2c221e;
+    
+        }
+    
+    
+    
+        /* 5. BANNER PROFESSIONAL PÉČE - Luxusní tmavé hnědo-zlaté pozadí */
+    
+        .bg-loreal {
+    
+            background-color: #211a18;
+    
+            padding: 80px 20px;
+    
+        }
+    
+    
+    
+        .vlasy-loreal-banner {
+    
+            background: linear-gradient(135deg, #342a26 0%, #211a18 100%);
+    
+            color: #ffffff;
+    
+            padding: 60px 40px;
+    
+            border-radius: 20px;
+    
+            max-width: 1100px;
+    
+            margin: 0 auto;
+    
+            text-align: center;
+    
+            border: 1px solid rgba(212, 163, 115, 0.4);
+    
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    
+        }
+    
+    
+    
+        .vlasy-loreal-banner h3 {
+    
+            color: #e2beaa;
+    
+            font-size: 1.9rem;
+    
+            margin-bottom: 20px;
+    
+            font-weight: 800;
+    
+            letter-spacing: 0.5px;
+    
+            font-family: 'Montserrat', sans-serif;
+    
+        }
+    
+    
+    
+        .vlasy-loreal-banner p {
+    
+            font-size: 1.1rem;
+    
+            line-height: 1.85;
+    
+            color: #f0e6e0;
+    
+            max-width: 900px;
+    
+            margin: 0 auto;
+    
+        }
+    
+    
+    
+        /* 6. REZERVAČNÍ CTA - Růžovo-zlatý champagne tón */
+    
+        .bg-cta {
+    
+            background-color: #f5ebe3;
+    
+            padding: 80px 20px;
+    
+        }
+    
+    
+    
+        .vlasy-cta-box {
+    
+            text-align: center;
+    
+            margin: 0 auto;
+    
+            padding: 50px 30px;
+    
+            background: #ffffff;
+    
+            border-radius: 20px;
+    
+            max-width: 900px;
+    
+            border: 1px solid #ebdcd0;
+    
+            box-shadow: 0 12px 30px rgba(181, 140, 116, 0.12);
+    
+        }
+    
+    
+    
+        .vlasy-cta-box h3 {
+    
+            font-size: 1.8rem;
+    
+            color: #382c26;
+    
+            margin-bottom: 15px;
+    
+            font-family: 'Montserrat', sans-serif;
+    
+            font-weight: 700;
+    
+        }
+    
+    
+    
+        .vlasy-cta-box p {
+    
+            margin-bottom: 30px;
+    
+            color: #63544e;
+    
+            font-size: 1.1rem;
+    
+        }
+    
+    
+    
+        .vlasy-btn {
+    
+            display: inline-block;
+    
+            background: linear-gradient(135deg, #c8a288 0%, #b3896f 100%);
+    
+            color: #ffffff !important;
+    
+            padding: 16px 42px;
+    
+            text-decoration: none;
+    
+            border-radius: 35px;
+    
+            font-weight: 700;
+    
+            font-size: 1rem;
+    
+            text-transform: uppercase;
+    
+            letter-spacing: 1.2px;
+    
+            box-shadow: 0 8px 20px rgba(200, 162, 136, 0.35);
+    
+            transition: all 0.3s ease;
+    
+        }
+    
+    
+    
+        .vlasy-btn:hover {
+    
+            transform: translateY(-3px);
+    
+            box-shadow: 0 14px 28px rgba(200, 162, 136, 0.5);
+    
+            background: linear-gradient(135deg, #b3896f 0%, #9e755c 100%);
+    
+        }
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+    
+    
+    <div class="hamburger-menu">
+    
+        <input class="zruseni" type="button" value="x">
+    
+        <a href="index.html" class="hamburger-link o">Domů</a>
+    
+        <a href="tym.html" class="hamburger-link o">Náš Tým</a>
+    
+        <a href="#sluzby" class="hamburger-link o">Služby<span class="sipka">▾</span></a>
+    
+        <a href="vlasy.html" class="hamburger-link link-mensi">Péče o vlasy a vlasovou pokožku</a>
+    
+        <a href="nanotape.html" class="hamburger-link link-mensi">Prodlužování vlasů NANOTAPE</a>
+    
+        <a href="rasy.html" class="hamburger-link link-mensi">Prodlužování řas a úprava obočí</a>
+    
+        <a href="kosmetika.html" class="hamburger-link link-mensi">Kosmetika & Vizážistka</a>
+    
+        <a href="nehty.html" class="hamburger-link link-mensi">Nehtová modeláž a manikúra</a>
+    
+        <a href="#galerie" class="hamburger-link o">Galerie<span class="sipka">▾</span></a>
+    
+        <a href="galerie-prace.html" class="hamburger-link link-mensi">Ukázky Práce</a>
+    
+        <a href="fotogalerie.html" class="hamburger-link link-mensi">Fotky Interiéru</a>
+        <a href="#vlasik" class="hamburger-link o">Ceník</a>
+    
+        <a href="kontakty.html" class="hamburger-link o">Kontakty</a>
+    
+    </div>
+    
+    
+    
+    <a class="nahoru" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    
+    
+    
+    <div class="topbar">
+    
+        <div class="nav-kontakty">
+    
+            <div class="telefon">
+    
+                <div class="address">
+    
+                    <a class="lincik" target="_blank" href="tel:+420556731788"><i class="fa-solid fa-location-dot"></i></a>
+    
+                    <address class="telefon-span">K Nemocnici 3, 741 01 Nový Jičín</address>
+    
+                </div>
+    
+                <div class="separator"></div>
+    
+                <div class="oteviracka">
+    
+                    <i class="fa-solid fa-clock"></i>
+    
+                    <span class="telefon-span">PO - NE I dle objednávek </span>
+    
+                </div>
+    
+            </div>
+    
+            <div class="socials">
+    
+                <a target="_blank" href="https://www.instagram.com/salon_art_ego/"><i class="fa-brands fa-instagram lincik klik"></i></a>
+    
+                <a target="_blank" href="https://www.facebook.com/p/Kade%C5%99nick%C3%BD-kosmetick%C3%BD-salon-art-ego-100063534042336/?locale=cs_CZ"><i class="fa-brands fa-facebook lincik klik"></i></a>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+    
+    
+    
+    <header id="header">
+    
+        <nav>
+    
+            <input type="button" class="hamburgerInput" value="≡">
+    
+            <figure class="osobni-logo-figure">
+    
+                <img src="logo3-removebg-preview2.webp" alt="" class="osobni-logo-image">
+    
+            </figure>
+    
+            <ul class="link-list">
+    
+                <li class="link-list-li">
+    
+                    <a href="index.html" class="nav-link klik">Domů</a>
+    
+                </li>
+    
+                <li class="link-list-li">
+    
+                    <a href="tym.html" class="nav-link klik">Náš Tým</a>
+    
+                </li>
+    
+                <li class="link-list-li dropdown">
+    
+                    <a href="#" class="nav-link klik">Služby▾</a>
+    
+                    <ul class="sluzby-podsekce">
+    
+                        <div class="podsekce-div">
+    
+                            <li class="podsekce-li">
+    
+                                <a class="podsekce-link" href="vlasy.html">Péče o vlasy a vlasovou pokožku</a>
+    
+                            </li>
+    
+                            <li class="podsekce-li">
+    
+                                <a class="podsekce-link" href="nanotape.html">Prodlužování vlasů NANOTAPE</a>
+    
+                            </li>
+    
+                            <li class="podsekce-li">
+    
+                                <a class="podsekce-link" href="rasy.html">Prodlužování řas a úprava obočí</a>
+    
+                            </li>
+    
+                            <li class="podsekce-li">
+    
+                                <a class="podsekce-link" href="kosmetika.html">Kosmetika & Vizážistka</a>
+    
+                            </li>
+    
+                            <li class="podsekce-li">
+    
+                                <a class="podsekce-link" href="nehty.html">Nehtová modeláž a manikúra</a>
+    
+                            </li>
+    
+                        </div>
+    
+                    </ul>
+    
+                </li>
+    
+                <li class="link-list-li dropdown">
+    
+                    <a href="#galerie" class="nav-link klik">Galerie▾</a>
+    
+                    <ul class="sluzby-podsekce podsekce2">
+    
+                        <div class="podsekce-div">
+    
+                            <li class="podsekce-li">
+    
+                                <a class="podsekce-link" href="galerie-prace.html">ukázky práce</a>
+    
+                            </li>
+    
+                            <li class="podsekce-li">
+    
+                                <a class="podsekce-link" href="fotogalerie.html">fotky interiéru</a>
+    
+                            </li>
+    
+                        </div>
+    
+                    </ul>
+    
+                </li>
+                <li class="link-list-li"><a href="#vlasik" class="nav-link klik">Ceník</a></li>
+    
+                <li class="link-list-li">
+    
+                    <a href="kontakty.html" class="nav-link klik">Kontakty</a>
+    
+                </li>
+    
+            </ul>
+    
+        </nav>
+    
+    </header>
+    
+    
+    
+    <main>
+    
+        <section id="nanotape">
+    
+            
+    
+            <!-- 1. BLOK: Nadpis a úvodní texty (Jemná pudrová) -->
+    
+            <div class="section-block bg-intro">
+    
+                <h2 class="nadpis-h2">Péče o vlasy a vlasovou pokožku</h2>
+    
+                <div class="cara"></div>
+    
+                <span class="nanospan sekce">Vlasy, které si zamilujete</span>
+    
+        
+    
+                <div class="vlasy-intro-box sekce">
+    
+                    <p class="vlasy-intro-main">
+    
+                        Každý vlas je jedinečný a zaslouží si individuální přístup. Nabízíme účesy podle nejnovějších světových trendů, precizní dámské střihy, šetrné zesvětlování a melírování. Naší hlavní prioritou je nejen perfektní vzhled, ale především zdraví, síla a přirozený lesk vašich vlasů.
+    
+                    </p>
+    
+                    <p class="vlasy-intro-sub">
+    
+                        Součástí každé návštěvy je <strong>odborné vlasové poradenství</strong>, během kterého s vámi zkonzultujeme vaše přání a vybereme střih i tónování, jež dokonalým způsobem zvýrazní vaše rysy a doplní váš osobní styl.
+    
+                    </p>
+    
+                </div>
+    
+            </div>
+    
+            
+    
+            <!-- 2. BLOK: Banner / Carousel obrázků (Čistě bílá / Tmavé pozadí) -->
+    
+            <div class="section-block bg-banner sekce" id="banner">
+    
+                <div class="banner-container">
+    
+                    <img src="vlasy1.webp" alt="">
+    
+                    <img src="vlasy2.webp" alt="">
+    
+                    <img src="vlasy3.webp" alt="">
+    
+                    <img src="vlasy4.webp" alt="">
+    
+                    <img src="vlasy5.webp" alt="">
+    
+                    <img src="vlasy6.webp" alt="">
+    
+                    <img src="vlasy11.webp" alt="">
+    
+                    <img src="vlasy8.webp" alt="">
+    
+                    <img src="vlasy9.webp" alt="">
+    
+                    <img src="vlasy10.webp" alt="">
+    
+    
+    
+                    <img src="vlasy1.webp" alt="">
+    
+                    <img src="vlasy2.webp" alt="">
+    
+                    <img src="vlasy3.webp" alt="">
+    
+                    <img src="vlasy4.webp" alt="">
+    
+                    <img src="vlasy5.webp" alt="">
+    
+                    <img src="vlasy6.webp" alt="">
+    
+                    <img src="vlasy11.webp" alt="">
+    
+                    <img src="vlasy8.webp" alt="">
+    
+                    <img src="vlasy9.webp" alt="">
+    
+                    <img src="vlasy10.webp" alt="">
+    
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <!-- 3. BLOK: Trichologické vyšetření a základní péče -->
+    
+            <div class="section-block bg-services sekce">
+    
+                <div class="section-title-wrapper">
+    
+                    <h2>Trichologie & Diagnostika</h2>
+    
+                    <p>Bezbolestná a neinvazivní metoda určená k detailní diagnostice stavu vlasů a vlasové pokožky.</p>
+    
+                </div>
+    
+    
+    
+                <div class="vlasy-services-grid">
+    
+                    <div class="vlasy-service-card">
+    
+                        <span class="badge-tag">Diagnostika</span>
+    
+                        <h3>Trichologické vyšetření</h3>
+    
+                        <p>Specializovaná metoda, která odhalí přesné příčiny problémů s vlasy a pokožkou přímo u kořínků.</p>
+    
+                        <strong>Co vyšetření řeší:</strong>
+    
+                        <ul class="vlasy-list">
+    
+                            <li>Vypadávání a řídnutí vlasů (včetně alopecie).</li>
+    
+                            <li>Problémy s pokožkou (lupy, lupénka, seborea, svědění).</li>
+    
+                            <li>Rychlé maštění nebo naopak extrémní suchost pokožky a vlasů.</li>
+    
+                            <li>Poškození vlasů po chemických zákrocích či nesprávné péči.</li>
+    
+                        </ul>
+    
+                    </div>
+    
+                
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <!-- 3.5 BLOK: Čištění vlasů (Malibu C & Metal Detox) -->
+    
+            <div class="section-block bg-intro sekce">
+    
+                <div class="section-title-wrapper">
+    
+                    <h2>Hloubkové čištění vlasů</h2>
+    
+                    <p>Detoxikační kúry určené k odstranění minerálů, kovů a usazenin pro dokonale čistý vlas.</p>
+    
+                </div>
+    
+    
+    
+                <div class="vlasy-services-grid">
+    
+                    <!-- Malibu C -->
+    
+                    <div class="vlasy-service-card">
+    
+                        <span class="badge-tag">Povrchový detox</span>
+    
+                        <h3>Malibu C</h3>
+    
+                        <p>Salonní kúra určená k hloubkovému odstranění nánosů minerálů, kovů a chloru z vlasového vlákna na bázi přírodních antioxidantů. Okamžitě obnovuje zdraví, lesk a lehkost vlasů.</p>
+    
+                        
+    
+                        <strong>Co z vlasů odstraňuje:</strong>
+    
+                        <ul class="vlasy-list">
+    
+                            <li><strong>Nánosy z tvrdé vody:</strong> Odstraňuje vápník, hořčík, měď a železo způsobené tvrdou vodou.</li>
+    
+                            <li><strong>Zbytky stylingu:</strong> Likviduje nahromaděné silikony, vosky a těžké oleje.</li>
+    
+                            <li><strong>Chlor:</strong> Zbavuje vlasy zeleného nádechu a zápachu po plavání.</li>
+    
+                        </ul>
+    
+    
+    
+                        <strong>Hlavní výhody ošetření:</strong>
+    
+                        <ul class="vlasy-list">
+    
+                            <li>Oživení barvy a navrácení správného tónu.</li>
+    
+                            <li>Čistý vlas absorbuje barvu rovnoměrně bez fleků.</li>
+    
+                            <li>Vlasy přestanou být suché a začnou lépe přijímat masky a péči.</li>
+    
+                        </ul>
+    
+                    </div>
+    
+    
+    
+                    <!-- Metal Detox -->
+    
+                    <div class="vlasy-service-card">
+    
+                        <span class="badge-tag">Hloubková neutralizace</span>
+    
+                        <h3>L'Oréal Metal Detox</h3>
+    
+                        <p>Specializovaná péče zaměřená na neutralizaci kovů (především mědi) <strong>uvnitř</strong> vlasového vlákna. Na rozdíl od Malibu C, které čistí povrch, Metal Detox působí přímo uvnitř vlasu.</p>
+    
+                        
+    
+                        <strong>Jak Metal Detox funguje:</strong>
+    
+                        <ul class="vlasy-list">
+    
+                            <li><strong>Molekula Glicoamine:</strong> Pronikne hluboko do vlasového vlákna, přitáhne kovy jako magnet a neutralizuje je.</li>
+    
+                            <li><strong>Glicofiller:</strong> Vyplňuje mikro-poškození na povrchu, snižuje poréznost a brání dalším nečistotám.</li>
+    
+                        </ul>
+    
+    
+    
+                        <strong>Hlavní výhody ošetření:</strong>
+    
+                        <ul class="vlasy-list">
+    
+                            <li>O 87 % nižší riziko lámání vlasů během chemických služeb.</li>
+    
+                            <li>100% spolehlivý výsledek barvení bez nechtěných odlesků.</li>
+    
+                            <li>Až 25× silnější vlasové vlákno a hydratace až na 72 hodin.</li>
+    
+                            <li>Ochrana před UV zářením a delší výdrž barvy.</li>
+    
+                        </ul>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <!-- 3.6 BLOK: Hloubková regenerace -->
+    
+            <div class="section-block bg-services sekce">
+    
+                <div class="section-title-wrapper">
+    
+                    <h2>Hloubková regenerace & Obnova</h2>
+    
+                    <p>Pokročilé technologie pro obnovu, vyhlazení a záchranu i extrémně poškozených vlasů.</p>
+    
+                </div>
+    
+    
+    
+                <div class="vlasy-services-grid">
+    
+                    <!-- SteamPod -->
+    
+                    <div class="vlasy-service-card">
+    
+                        <span class="badge-tag">Parní péče</span>
+    
+                        <h3>SteamPod Regenerace</h3>
+    
+                        <p>Hloubkové ošetření od L'Oréal Professionnel využívající sílu vysokotlaké páry a kosmetiky aktivované teplem. Vlasy neničí, ale hydratuje, zaceluje a léčí přímo během stylingu.</p>
+    
+                        
+    
+                        <strong>Jak SteamPod funguje:</strong>
+    
+                        <ul class="vlasy-list">
+    
+                            <li><strong>Aktivace párou:</strong> Pára otevírá vlasové kutikuly pro hluboký průnik látek.</li>
+    
+                            <li><strong>Pro-Keratin & Alpha-silane:</strong> Teplo a pára "uzamknou" ochranné složky ve struktuře vlasu.</li>
+    
+                            <li>Zamezuje tepelnému šoku a udržuje přirozenou vlhkost.</li>
+    
+                        </ul>
+    
+    
+    
+                        <strong>Hlavní výhody:</strong>
+    
+                        <ul class="vlasy-list">
+    
+                            <li>Až o 95 % nižší lámavost ve srovnání s běžnými žehličkami.</li>
+    
+                            <li>Rekonstrukce poškozených, suchých nebo zcitlivělých vlasů.</li>
+    
+                            <li>Zacelení roztřepených konečků a zrcadlový lesk.</li>
+    
+                            <li>Ochrana proti krepatění až na 72 hodin.</li>
+    
+                        </ul>
+    
+                    </div>
+    
+    
+    
+                    <!-- Keratin Alpha Sleek -->
+    
+                    <div class="vlasy-service-card">
+    
+                        <span class="badge-tag">Revoluce v uhlazení</span>
+    
+                        <h3>Keratin Alpha Sleek</h3>
+    
+                        <p>Pokročilá hybridní kúra zaměřená na keratin Alpha – hlavní stavební jednotku uvnitř vlasu. Transformuje vlas zevnitř, neobaluije ho pouze na povrchu.</p>
+    
+                        
+    
+                        <strong>Detail péče:</strong>
+    
+                        <ul class="vlasy-list">
+    
+                            <li><strong>Hlavní účinek:</strong> Krotí krepatění, redukuje objem a zkracuje čas ranního stylingu na polovinu.</li>
+    
+                            <li><strong>Technologie:</strong> Využívá Keratin-Alpha Shaper a aminokyseliny pro zachování přirozeného pohybu.</li>
+    
+                            <li><strong>Výsledek:</strong> Vlasy jsou 5× hladší, odolné vůči vlhkosti (i při 80% vlhkosti vzduchu) a extrémně lesklé.</li>
+    
+                        </ul>
+    
+                    </div>
+    
+    
+    
+                    <!-- Absolut Repair Molecular -->
+    
+                    <div class="vlasy-service-card">
+    
+                        <span class="badge-tag">Molekulární záchrana</span>
+    
+                        <h3>Absolut Repair Molecular</h3>
+    
+                        <p>Molekulární řada opravuje i extrémně zničené, gumové a chemicky spálené vlasy. Dokáže zvrátit až 2 roky poškození již po první aplikaci.</p>
+    
+                        
+    
+                        <strong>Detail péče:</strong>
+    
+                        <ul class="vlasy-list">
+    
+                            <li><strong>Technologie:</strong> Obsahuje peptidové vazby a 5 aminokyselin štěpených na mikro části, které se dostanou až do kortexu a znovu spojí poškozené vazby.</li>
+    
+                            <li><strong>Výsledek:</strong> Okamžité obnovení elasticity, síly a flexibility. Zcitlivělé vlasy získají zpět svou pevnost.</li>
+    
+                        </ul>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <!-- Srovnávací tabulka -->
+    
+                <div class="comparison-wrapper">
+    
+                    <h3>Jaký je mezi regeneracemi rozdíl a co vybrat?</h3>
+    
+                    <div class="responsive-table">
+    
+                        <table class="custom-table">
+    
+                            <thead>
+    
+                                <tr>
+    
+                                    <th>Vlastnost</th>
+    
+                                    <th>Keratin Alpha Sleek</th>
+    
+                                    <th>Molekulární regenerace (Absolut Repair)</th>
+    
+                                </tr>
+    
+                            </thead>
+    
+                            <tbody>
+    
+                                <tr>
+    
+                                    <td><strong>Primární cíl</strong></td>
+    
+                                    <td>Uhlazení, lesk a stop krepatění</td>
+    
+                                    <td>Záchrana extrémně zničených a oslabených vlasů</td>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td><strong>Typ vlasů</strong></td>
+    
+                                    <td>Husté, nepoddajné, krepaté a vlnité</td>
+    
+                                    <td>Odbarvené, porézní, lámající se a gumové</td>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td><strong>Klíčová složka</strong></td>
+    
+                                    <td>Keratin Alpha & Aminokyseliny</td>
+    
+                                    <td>Peptidové vazby & 5 aminokyselin</td>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td><strong>Hlavní benefit</strong></td>
+    
+                                    <td>Ochrana před vlhkostí, rovné a hladké vlasy</td>
+    
+                                    <td>Obnova ztracené elasticity a pevnosti</td>
+    
+                                </tr>
+    
+                            </tbody>
+    
+                        </table>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <!-- 4. BLOK: Ukázky práce / Galerie (Smetanově krémová) -->
+    
+            <div class="section-block bg-gallery">
+    
+                <div class="nanotape-container">
+    
+                    <h3 class="nadpis-vlasy">Ukázky práce</h3>
+    
+                    <div class="cara"></div>
+    
+                    
+    
+                    <div class="full-img" id="fullImgBox">
+    
+                        <img src="" alt="" id="fullImg">
+    
+                        <span onclick="closeFullImg()">X</span>
+    
+                    </div>
+    
+                    
+    
+                    <div class="kontejner-vlasy">
+    
+                        <figure class="fotky-figure sekce">
+    
+                            <img src="vlasy1.webp" alt="Ukázka práce vlasy" class="fotky-image" onclick="openFullImg(this.src)">
+    
+                        </figure>
+    
+                        <figure class="fotky-figure sekce">
+    
+                            <img src="vlasy2.webp" alt="Ukázka práce vlasy" class="fotky-image" onclick="openFullImg(this.src)">
+    
+                        </figure>
+    
+                        <figure class="fotky-figure sekce">
+    
+                            <img src="vlasy3.webp" alt="Ukázka práce vlasy" class="fotky-image" onclick="openFullImg(this.src)">
+    
+                        </figure>
+    
+                        <figure class="fotky-figure sekce">
+    
+                            <img src="vlasy4.webp" alt="Ukázka práce vlasy" class="fotky-image" onclick="openFullImg(this.src)">
+    
+                        </figure>
+    
+                        <figure class="fotky-figure sekce">
+    
+                            <img src="vlasy5.webp" alt="Ukázka práce vlasy" class="fotky-image" onclick="openFullImg(this.src)">
+    
+                        </figure>
+    
+                        <figure class="fotky-figure sekce">
+    
+                            <img src="vlasy6.webp" alt="Ukázka práce vlasy" class="fotky-image" onclick="openFullImg(this.src)">
+    
+                        </figure>
+    
+                        <figure class="fotky-figure sekce">
+    
+                            <img src="vlasy9.webp" alt="Ukázka práce vlasy" class="fotky-image" onclick="openFullImg(this.src)">
+    
+                        </figure>
+    
+                        <figure class="fotky-figure sekce">
+    
+                            <img src="vlasy8.webp" alt="Ukázka práce vlasy" class="fotky-image" onclick="openFullImg(this.src)">
+    
+                        </figure>
+    
+                        <figure class="fotky-figure sekce">
+    
+                            <img src="vlasy10.webp" alt="Ukázka práce vlasy" class="fotky-image" onclick="openFullImg(this.src)">
+    
+                        </figure>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+           <!-- 5. BLOK: Sekce L'Oréal Professionnel (Hnědo-espresso tón) -->
+    
+           <div class="section-block bg-loreal sekce">
+    
+            <div class="vlasy-loreal-banner">
+    
+                <h3>Prémiová kosmetika L'Oréal Professionnel</h3>
+    
+                <p>
+    
+                    Přímo v našem salonu nabízíme <strong>prodej profesionální vlasové kosmetiky L'Oréal Professionnel</strong>. Rádi vám doporučíme ideální šampony, masky i bezoplachovou péči přímo na míru vašim vlasům, aby váš nový střih i barva zůstaly perfektní i při domácí péči.
+    
+                </p>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+        <!-- 6. BLOK: Rezervační výzva CTA (Champagne) -->
+    
+        <div class="section-block bg-cta sekce">
+    
+            <div class="vlasy-cta-box">
+    
+                <h3>Chcete nový střih nebo poradit s péčí?</h3>
+    
+                <p>Zavolejte nám, objednejte se a svěřte své vlasy do rukou odborníků.</p>
+    
+                <a href="kontakty.html" class="vlasy-btn">Objednat se</a>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+        <!-- 7. BLOK: Módní/klasické zesvětlení vlasů -->
+    
+        <div class="section-block bg-services sekce">
+    
+            <div class="section-title-wrapper">
+    
+                <h2>Módní/klasické zesvětlení vlasů</h2>
+    
+                <p>Mezi moderní a módní techniky zesvětlení vlasů patří pokročilé metody, které vytvářejí přirozené přechody, optický objem a minimalizují viditelné odrosty.</p>
+    
+            </div>
+    
+    
+    
+            <div class="vlasy-services-grid">
+    
+                <div class="vlasy-service-card">
+    
+                    <span class="badge-tag">Zesvětlení</span>
+    
+                    <h3>Balayage [Balejaž]</h3>
+    
+                    <p><strong>Profesionální název:</strong> Technika volné ruky (Freehand painting) nebo Otevřené zesvětlování.</p>
+    
+                    <p><strong>O co jde:</strong> Kadeřník nanáší zesvětlovač štětcem na prameny vlasů pohyby, které připomínají malování na plátno. Nepoužívají se alobaly. Výsledkem je velmi přirozený, sluncem políbený efekt s měkkým přechodem u kořínků.</p>
+    
+                </div>
+    
+    
+    
+                <div class="vlasy-service-card">
+    
+                    <span class="badge-tag">Šetrná technika</span>
+    
+                    <h3>AirTouch [Ertáč]</h3>
+    
+                    <p><strong>Profesionální název:</strong> Bezdotyková fénová separace neboli Zesvětlení pomocí proudu vzduchu.</p>
+    
+                    <p><strong>O co jde:</strong> Nejdokonalejší a nejšetrnější technika současnosti. Kadeřník vezme pramen vlasů a profoukne ho fénem. Krátké, slabé a nově rostoucí vlasy (baby vlásky) vyfouká pryč a zesvětluje pouze dlouhé, pevné vlasy v alobalu. Vytváří absolutně plynulý, kouřový přechod bez jakýchkoliv pruhů a odrost vydrží skvěle 6 až 9 měsíců.</p>
+    
+                </div>
+    
+    
+    
+                <div class="vlasy-service-card">
+    
+                    <span class="badge-tag">Kombinovaná péče</span>
+    
+                    <h3>Foilyage [Foliáž]</h3>
+    
+                    <p><strong>Profesionální název:</strong> Kombinovaná technika balayage a foliace.</p>
+    
+                    <p><strong>O co jde:</strong> Spojuje přirozenost balayage s intenzitou klasického melíru. Kadeřník namaluje pramen jako u balayage, ale zabalí ho do fólie/alobalu. Teplo uvnitř fólie umožní zesvětlit vlasy mnohem více (vhodné pro tmavovlásky, které chtějí jít do velmi světlé blond).</p>
+    
+                </div>
+    
+    
+    
+                <div class="vlasy-service-card">
+    
+                    <span class="badge-tag">Jemný melír</span>
+    
+                    <h3>Babylights</h3>
+    
+                    <p><strong>Profesionální název:</strong> Mikromelírování nebo Tkaná technika s vysokou hustotou.</p>
+    
+                    <p><strong>O co jde:</strong> Klasický melír, ale pletený z extrémně tenkých, téměř neviditelných pramínků těsně vedle sebe. Výsledkem je celistvý, celkově světlejší dojem, jako by vlasy přirozeně vyšisovalo dětské sluníčko.</p>
+    
+                </div>
+    
+    
+    
+                <div class="vlasy-service-card">
+    
+                    <span class="badge-tag">Rámování obličeje</span>
+    
+                    <h3>Money Piece / Face Framing</h3>
+    
+                    <p><strong>Profesionální název:</strong> Konturování obličeje nebo Zesvětlení obličejového rámce.</p>
+    
+                    <p><strong>O co jde:</strong> Výraznější zesvětlení pouze pramenů, které lemují obličej, zatímco zbytek vlasů zůstává přirozenější nebo tmavší. Tento prvek okamžitě rozjasní pleť a oči. Často se kombinuje právě s balayage nebo AirTouch.</p>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+        <!-- 8. BLOK: Koloristika ( barvení vlasů ) -->
+    
+        <div class="section-block bg-intro sekce">
+    
+            <div class="section-title-wrapper">
+    
+                <h2>Koloristika ( barvení vlasů )</h2>
+    
+            </div>
+    
+    
+    
+            <div class="vlasy-services-grid">
+    
+                <div class="vlasy-service-card">
+    
+                    <span class="badge-tag">Lesk & Tón</span>
+    
+                    <h3>Změna odstínu a lesk (Bez zesvětlení)</h3>
+    
+                    <ul class="vlasy-list">
+    
+                        <li><strong>Demisemipermanentní barvení / Tónování (Glossing / Toning):</strong> Použití šetrných barev bez amoniaku, které se nevpíjejí hluboko do vlasu, ale obalují ho. Používá se k natónování blond odstínů, neutralizaci žlutých tónů nebo dodání extrémního lesku.</li>
+    
+                        <li><strong>Barvení tón v tónu:</strong> Služba, která nemění přirozenou výšku tónu (nezesvětluje), ale dodává vlasům bohatší reflex, sytost a kryje první šediny.</li>
+    
+                    </ul>
+    
+                </div>
+    
+    
+    
+                <div class="vlasy-service-card">
+    
+                    <span class="badge-tag">Světlo & Stín</span>
+    
+                    <h3>Vícedimenzionální barvení (Hra světla a stínu)</h3>
+    
+                    <ul class="vlasy-list">
+    
+                        <li><strong>Multitónování / Multidimenzionální barvení:</strong> Profesionální technika, kdy kadeřník nemíchá pouze jednu barvu, ale pracuje s 2–3 příbuznými odstíny. Výsledkem je, že barva nevypadá jako „helma“, ale má přirozený pohyb, hloubku a opticky zvětšuje objem.</li>
+    
+                        <li><strong>Color Melting (Prolínání barev):</strong> Technika, při které kadeřník dokonale rozmaže přechod mezi dvěma nebo více odstíny (např. od tmavých kořínků po světlé konce). Přechod je tak plynulý, že lidské oko nepozná, kde jedna barva končí a druhá začíná.</li>
+    
+                    </ul>
+    
+                </div>
+    
+    
+    
+                <div class="vlasy-service-card">
+    
+                    <span class="badge-tag">Péče o odrosty</span>
+    
+                    <h3>Krytí šedin a odrostů</h3>
+    
+                    <ul class="vlasy-list">
+    
+                        <li><strong>Retuš odrostu (Root Touch-up):</strong> Přesná aplikace permanentní barvy pouze na nově vyrostlé vlasy u pokožky.</li>
+    
+                        <li><strong>Kamufláž šedin:</strong> Speciální technika (často u mužů nebo při jemném šedivění), která šediny zcela nezafarbí, ale pouze je tónově potlačí a „rozmaže“, aby odrost nebyl tvrdý a nápadný.</li>
+    
+                    </ul>
+    
+                </div>
+    
+    
+    
+                <div class="vlasy-service-card">
+    
+                    <span class="badge-tag">Kreativní styl</span>
+    
+                    <h3>Výrazné a kreativní barvení</h3>
+    
+                    <ul class="vlasy-list">
+    
+                        <li><strong>Kreativní koloristika / Avantgardní barvení:</strong> Práce s netradičními (pastelovými, neonovými či duhovými) pigmenty. Zahrnuje techniky jako skryté barvení (Underlight – barva je vidět jen při sepnutí vlasů) nebo blokové barvení (Color Blocking).</li>
+    
+                    </ul>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+        <!-- 9. BLOK: Trendy střihy & styling -->
+    
+        <div class="section-block bg-services sekce">
+    
+            <div class="section-title-wrapper">
+    
+                <h2>Trendy střihy & styling</h2>
+    
+                <p>Vytvoříme vám střih a úpravu vlasů přesně podle vašich představ a aktuálních módních trendů.</p>
+    
+            </div>
+    
+    
+    
+            <div class="vlasy-services-grid">
+    
+                <div class="vlasy-service-card">
+    
+                    <span class="badge-tag">Styling</span>
+    
+                    <h3>O službě</h3>
+    
+                    <ul class="vlasy-list">
+    
+                        <li><strong>Individuální přístup:</strong> Poradíme vám střih podle tvaru vašeho obličeje.</li>
+    
+                        <li><strong>Moderní vzhled:</strong> Sledujeme nové módní trendy v oblasti střihů a stylingu.</li>
+    
+                        <li><strong>Profesionální péče:</strong> Používáme kvalitní vlasové přípravky pro lesk a zdraví vlasů.</li>
+    
+                        <li><strong>Finální úprava:</strong> Odcházíte s dokonale učesanými vlasy pro každou příležitost.</li>
+    
+                    </ul>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <div class="cenik-container sekce" id="vlasik">
+            
+        <!-- 1. KADEŘNICTVÍ -->
+        <div class="cenik-karta">
+            <h3 class="cenik-nadpis"><i class="fa-solid fa-scissors"></i> Kadeřnictví</h3>
+            <ul class="cenik-seznam">
+                <li><span>Dámský střih</span> <strong>500 – 1 000 Kč</strong></li>
+                <li><span>Odrosty</span> <strong>800 – 1 500 Kč</strong></li>
+                <li><span>Barva</span> <strong>1 000 – 2 500 Kč</strong></li>
+                <li><span>Zesvětlování</span> <strong>1 000 – 4 000 Kč</strong></li>
+                <li><span>Regenerace / Malibu C / Metal Detox</span> <strong>400 – 1 500 Kč</strong></li>
+                <li><span>TRICHOLOGIE (čištění pokožky + vyšetření kamerou)</span> <strong>1 700 – 2 000 Kč</strong></li>
+            </ul>
+        </div>
+
+       
+    
+    </main>
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-blok blocekJedna sekce">
+                <div class="footer-text">
+                    <figure class="footer-figure">
+                        <img src="logo3-removebg-preview2.webp" alt="" class="footer-image">
+                    </figure>
+                    <p class="footer-para">Dopřejte svým vlasům profesionální péči a nechte se hýčkat v prostředí, kde s láskou pečujeme o váš celkový půvab. V našem salonu propojujeme špičkové služby s dokonalým relaxem, abyste odcházela sebevědomá, odpočinutá a zářící.</p>
+                    
+                </div>
+            </div>
+
+            <div class="footer-links sekce">
+                <h3 class="footer-h3">Rychlé odkazy</h3>
+                <a class="footer-link linkos" href="index.html">Domů</a>
+                <a class="footer-link linkos" href="#onas">O nás</a>
+                <a class="footer-link linkos" href="#sluzby">Služby</a>
+                <a class="footer-link linkos" href="#galerie">Galerie</a>
+                <a class="footer-link linkos" href="#vlasik">Ceník</a>
+                <a class="footer-link linkos" href="#kontakty">Kontakty</a>
+            </div>
+
+            <div class="footer-links sekce">
+                <h3 class="footer-h3">Naše služby</h3>
+                <a class="footer-link linkos2" href="vlasy.html">Péče o vlasy a vlasovou pokožku</a>
+                <a class="footer-link linkos2" href="vlasy.html">Barvení vlasů</a>
+                <a class="footer-link linkos2" href="nanotape.html">Prodlužování vlasů</a>
+                
+                <a class="footer-link linkos2" href="rasy.html">Řasy</a>
+                <a class="footer-link linkos2" href="nehty.html">Nehty</a>
+                <a class="footer-link linkos2" href="kosmetika.html">Kosmetika</a>
+            </div>
+
+            <div class="footer-blok sekce">
+                <h3 class="footer-h3">Kontaktuj nás</h3>
+                <div class="footer-radek">
+                    <i class="fa-solid fa-location-dot i a"></i>
+                    <span class="footer-span">K Nemocnici 3, 741 01 Nový Jičín</span>
+                </div>
+                <div class="site">
+                    <a target="_blank" href="https://www.instagram.com/salon_art_ego/"><i class="fa-brands fa-instagram i a"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/p/Kade%C5%99nick%C3%BD-kosmetick%C3%BD-salon-art-ego-100063534042336/?locale=cs_CZ"><i class="fa-brands fa-facebook i a"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="caraDva sekce"></div>
+        <p class="footer-last">Web vytvořil Filip Jiřík</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
